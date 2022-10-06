@@ -100,7 +100,7 @@ input, select, textarea {
 	body, input, textarea, select {
 		font-family: 'Source Sans Pro', sans-serif;
 		font-weight: 400;
-		color: #919499;
+		color: #ffffff;
 		font-size: 14pt;
 		line-height: 1.75em;
 		letter-spacing: 0.025em;
@@ -1457,6 +1457,7 @@ input, select, textarea {
 	}
 
 		header.style1 h2 {
+			color: #ffffff;
 			font-weight: 700;
 			font-size: 2em;
 			letter-spacing: 0.075em;
@@ -1464,7 +1465,7 @@ input, select, textarea {
 		}
 
 		header.style1 p {
-			color: #b1b4b9;
+			color: #ff0000;
 			display: block;
 			margin: 1.15em 0 0 0;
 			font-size: 1.3em;
@@ -1483,7 +1484,7 @@ input, select, textarea {
 		}
 
 			table.default tbody tr:nth-child(2n+2) {
-				background: #f4f4f4;
+				background: #5e7d58; 
 			}
 
 			table.default td {
@@ -1673,7 +1674,7 @@ input, select, textarea {
 		button.style1,
 		.button.style1 {
 			background: #e97770 url("images/overlay.png");
-			color: #fff;
+			color: rgb(255, 255, 255);
 		}
 
 			input[type="button"].style1:hover,
@@ -1698,8 +1699,8 @@ input, select, textarea {
 		button.style2,
 		.button.style2 {
 			background: none;
-			color: #606167;
-			box-shadow: inset 0px 0px 2px 0px #a0a1a7;
+			color: #e97770;
+			box-shadow: inset 0px 0px 2px 0px #ffffff;
 		}
 
 			input[type="button"].style2:hover,
@@ -1732,7 +1733,7 @@ input, select, textarea {
 			input[type="reset"].style3:hover,
 			button.style3:hover,
 			.button.style3:hover {
-				background-color: #3f434b;
+				background-color: #ffffff;
 			}
 
 			input[type="button"].style3:active,
@@ -1834,7 +1835,7 @@ input, select, textarea {
 	}
 
 		.feature-list section {
-			border-top: solid 1px #eee;
+			border-top: solid 1px rgb(255, 255, 255);
 			padding-top: 3em;
 			padding-left: 5em;
 			position: relative;
@@ -1859,7 +1860,7 @@ input, select, textarea {
 			.feature-list h3:before {
 				display: block;
 				color: #fff;
-				background: #2f333b url("images/overlay.png");
+				background: #34373c url("images/overlay.png");
 				border-radius: 2.5em;
 				text-align: center;
 				width: 2.5em;
@@ -2002,27 +2003,27 @@ input, select, textarea {
 			}
 
 		.wrapper.style1 {
-			background: #e97770 url("images/overlay.png");
-			color: #eee;
-			color: rgba(255, 255, 255, 0.75);
+			background: #282b34 url("images/overlay.png");
+			color: rgb(255, 255, 255);
+			color: rgb(255, 255, 255);
 		}
 
 			.wrapper.style1 .title {
-				background: #e97770 url("images/overlay.png");
-				color: #fff;
+				background: #282b34 url("images/overlay.png");
+				color: #e97770;
 			}
 
 			.wrapper.style1 h1, .wrapper.style1 h2, .wrapper.style1 h3, .wrapper.style1 h4, .wrapper.style1 h5, .wrapper.style1 h6, .wrapper.style1 strong, .wrapper.style1 b, .wrapper.style1 a {
-				color: #fff;
+				color: #e97770;
 			}
 
 		.wrapper.style2 {
-			background: #fff;
+			background: #282b34;
 		}
 
 			.wrapper.style2 .title {
-				background: #fff;
-				color: #484d55;
+				background: #282b34;
+				color: #e97770;
 			}
 
 		.wrapper.style3 {
@@ -2099,7 +2100,7 @@ input, select, textarea {
 
 		#logo p {
 			color: #eee;
-			color: rgba(255, 255, 255, 0.5);
+			color: rgb(255, 255, 255);
 			text-transform: uppercase;
 			margin: 1.25em 0 0 0;
 			display: block;
