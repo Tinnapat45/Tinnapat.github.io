@@ -1724,7 +1724,7 @@ input, select, textarea {
 		input[type="reset"].style3,
 		button.style3,
 		.button.style3 {
-			background: #2f333b url("images/overlay.png");
+			background: #202227 url("images/overlay.png");
 			color: #fff;
 		}
 
@@ -2003,13 +2003,13 @@ input, select, textarea {
 			}
 
 		.wrapper.style1 {
-			background: #282b34 url("images/overlay.png");
+			background: url("images/overlay1.png");
 			color: rgb(255, 255, 255);
 			color: rgb(255, 255, 255);
 		}
 
 			.wrapper.style1 .title {
-				background: #282b34 url("images/overlay.png");
+				background: #020106 url("images/overlay.png");
 				color: #e97770;
 			}
 
@@ -2027,16 +2027,16 @@ input, select, textarea {
 			}
 
 		.wrapper.style3 {
-			background: #f3f3f3 url("images/overlay.png");
+			background:url("images/overlay2.png");
 		}
 
 			.wrapper.style3 .title {
-				background: #f3f3f3 url("images/overlay.png");
-				color: #484d55;
+				background: #0e0d0d url("images/overlay.png");
+				color: #ffffff;
 			}
 
 			.wrapper.style3 .image {
-				border: solid 10px #fff;
+				border: solid 10px rgb(0, 0, 0);
 			}
 
 /* Page Wrapper */
