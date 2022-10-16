@@ -1,0 +1,307 @@
+<!DOCTYPE HTML>
+<!--
+	Escape Velocity by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Right Sidebar - Escape Velocity by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="right-sidebar is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<section id="header" class="wrapper">
+
+					<!-- Logo -->
+						<div id="logo">
+							<h1><a href="index.html">Tinnapat Dokmaiteds</a></h1>
+							<p>Escape Velocity</p>
+						</div>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="index.html">Home</a></li>
+								<li>
+									<a href="#">Menu</a>
+									<ul>
+										<li><a href="no-sidebar1.html">What is Python ?</a></li>
+										<li><a href="no-sidebar2.html">What is GitHub ?</a></li>
+										<li><a href="no-sidebar3.html">How to Download Python ?</a></li>
+										<li><a href="no-sidebar4.html">How to Download GitHub ?</a></li>
+										<li>
+											<a href="#">Download Software</a>
+											<ul>
+												<li><a href="#">Download Pythonr</a></li>
+												<li><a href="#">Download GITHUB</a></li>
+												<li><a href="#">Download GITBASH</a></li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li class="current"><a href="right-sidebar.html">Lecture Slides</a></li>
+								<li><a href="no-sidebar.html">History</a></li>
+							</ul>
+						</nav>
+
+				</section>
+
+			<!-- Main -->
+				<section id="main" class="wrapper style2">
+					<div class="title">Lecture-2</div>
+					<div class="container">
+						<div class="row gtr-150">
+							<div class="col-8 col-12-medium">
+
+								<!-- Content -->
+									<div id="content">
+										<article class="box post">
+											<header class="style1">
+												<h2>ตัวแปรและประเภทข้อมูล</h2>
+											</header>
+												<img src="images/r2.png" alt="" />
+											<p>ในบทนี้ คุณจะได้เรียนรู้เกี่ยวกับตัวแปรและประข้อมูลในภาษา Python เราจะพูดถึงการประกาศตัวแปรและการนำตัวแปรไปใช้งานในโปรแกรม และเราจะอธิบายถึงข้อมูลประเภทต่างๆ 
+												ที่เป็นประเภทข้อมูลพื้นฐาน (Primitive data type) ในภาษา Python และรวมทั้งฟังก์ชันสำหรับการใช้งานกับตัวแปร</p>
+
+											<p>ตัวแปร<br>
+												ตัวแปร (Variable) คือชื่อหรือเครื่องหมายที่กำหนดขึ้นสำหรับใช้อ้างถึงค่าที่เก็บในหน่วยความจำ ตัวแปรจะมีชื่อ (Identifier) สำหรับใช้ในการอ้างถึงข้อมูลของมัน ในการเขียนโปรแกรม 
+												ค่าของตัวแปรสามารถที่จะกำหนดได้ใน run-time หรือเปลี่ยนแปลงอยู่ตลอดเวลาในขณะที่โปรแกรมทำงาน (Executing)</p>
+
+											<p>ในการเขียนโปรแกรมคอมพิวเตอร์นั้น ตัวแปรจะแตกต่างจากตัวแปรในทางคณิตศาสตร์ ค่าของตัวแปรนั้นไม่จำเป็นต้องประกอบไปด้วยสูตรหรือสมการที่สมบูรณ์เหมือนกับในคณิตศาสตร์ ในคอมพิวเตอร์ 
+												ตัวแปรนั้นอาจจะมีการทำงานซ้ำๆ เช่น การกำหนดค่าในที่หนึ่ง และนำไปใช้อีกที่หนึ่งในโปรแกรม และนอกจากนี้ยังสามารถกำหนดค่าใหม่ให้กับตัวแปรได้ตลอดเวลา ต่อไปเป็นตัวอย่างของการประกาศตัวแปรในภาษา Python</p>
+												<img src="images/r2b1.png" alt="" />
+											<p>ในตัวอย่าง เราได้ทำการประกาศ 3 ตัวแปร ในการประกาศตัวแปรในภาษา Python คุณไม่จำเป็นต้องระบุประเภทของตัวแปรในตอนที่ประกาศเหมือนในภาษา C ในตัวแปร a มีค่าเป็น 3 และมีประเภทเป็น Integer ตัวแปร b มีค่าเป็น 4.92 
+												และมีประเภทเป็น Float และตัวแปร c มีค่าเป็น "Tinnapat" และเป็นประเภท String ภายหลังเราได้เปลี่ยนค่าของตัวแปร c เป็น 10.5 และตัวแปรกลายเป็นประเภท Float แทน</p>
+
+												<img src="images/r2b2.png" alt="" />
+											<p>ในภาษา Python นั้นสนับสนุนการกำหนดค่าให้กับตัวแปรหลายค่าในคำสั่งเดียว ในตัวอย่าง เป็นการกำหนดค่า 1 และ 2 กับตัวแปร a และ b ตามลำดับ และในคำสั่งต่อมาเป็นการกำหนดค่า 10 ให้กับตัวแปร x y และ z 
+												ซึ่งทำให้การเขียนโปรแกรมสะดวกและรวดเร็วมากขึ้น</p>
+												<img src="images/r2b3.png" alt="" />
+											<p>นี่เป็นผลลัพธ์การทำงานของโปรแกรม</p>
+
+											<p>ต่อไปจะเป็นการพูดถึงประเภทข้อมูลชนิดต่างๆ ที่ภาษา Python สนับสนุน ซึ่งจะมีอยู่สามประเภทใหญ่ๆ คือ ข้อมูลแบบตัวเลข นั้นจะแบ่งย่อยออกเป็น Integer และ Float ข้อมูลประเภท String และข้อมูลแบบลำดับ เช่น List และ Tuple 
+												ประเภทข้อมูลทั้งหมดนี้เป็น Built-in type ในภาษา Python</p>
+
+											<p>Numbers<br>
+												ในภาษา Python นั้นสนับสนุนข้อมูลแบบตัวเลข ซึ่งข้อมูลประเภทนี้จะแบ่งออกเป็น Integer Float Decimal และ Complex อย่างไรก็ตามเราจะเน้นย้ำใน Integer ซึ่งเป็นการเก็บข้อมูลแบบจำนวนเต็ม และ Float เป็นข้อมูลแบบจำนวนจริง 
+												สำหรับประเภทแบบ Decimal นั้นแตกต่างไปจาก Float คือสามารถเก็บความละเอียดของจุดทศนิยมได้มากกว่า นอกจากนี้ Python ยังสนับสนุนตัวเลขในรูปแบบ Complex ที่แสดงในแบบ a +bj ต่อไปเป็นตัวอย่างในการประกาศและใช้งานตัวแปรแบบตัวเลขในภาษา Python</p>
+												<img src="images/r2b4.png" alt="" />
+											<p>ในตัวอย่าง เป็นการประกาศและใช้งานตัวแปรประเภท Integer เราได้ทำการประกาศตัวแปรและกำหนดค่าให้กับ a และ b ในการแสดงผลในรูปแบบของ String format กับฟังก์ชัน print() นั้นจะใช้ specifier เป็น %d เราสามารถกำหนดค่าให้กับตัวแปรได้โดย Literal 
+												หรือ Expression</p>
+
+											<p>สิ่งหนึ่งที่น่าสังเกตในการหารตัวเลขในภาษา Python การหารตัวเลขนั้นจะได้ค่าเป็น Float เสมอ ถึงแม้ตัวเลขทั้งสองจะเป็น Integer ก็ตาม เช่นในตัวแปร d ซึ่งแตกต่างจากภาษา C ที่เมื่อตัวเลขทั้งสองเป็นแบบ Integer จะได้ผลลัพธ์เป็น Integer</p>
+												<img src="images/r2b5.png" alt="" />
+											<p>นี่เป็นผลลัพธ์การทำงานของโปรแกรม</p>
+
+											<img src="images/r2b6.png" alt="" />
+										<p>ต่อไปเป็นการประกาศและใช้งานตัวแปรประเภท Float หรือตัวเลขที่มีจุดทศนิยม ในการกำหนดค่าให้กับตัวแปรนั้น เมื่อคุณกำหนดตัวเลขมีจุดมันจะเป็นประเภท Float อัตโนมัติ เราสามารถกำหนดค่าโดยตรงหรือในรูปแบบของ Expression ได้ และนอกจากนี้ ในภาษา Python 
+											ยังสามารถกำหนดในรูปแบบสัญกรณ์วิทยาศาสตร์ได้เหมือนในตัวแปร height ซึ่งหมายถึง 2.31 x 10 ^ 5 และในตัวแปร length ซึ่งหมายถึง 1.3 x 10 ^ -3</p>
+											<img src="images/r2b7.png" alt="" />
+										<p>นี่เป็นผลลัพธ์การทำงานของโปรแกรม ซึ่งในการแสดงผลของข้อมูลประเภท Float กับการจัดรูปแบบของตัวเลขนั้นจะใช้ %f และสำหรับการดูค่าเต็มของตัวเลขจริงๆ นั้นเราจะแสดงค่าของตัวเลขผ่านฟังก์ชัน print โดยตรง เหมือนในคำสั่งแสดงผลค่าของ pi ในบรรทัดสุดท้าย</p>
+
+										</article>
+										<div class="row gtr-150">
+											<div class="col-6 col-12-small">
+												<section class="box">
+													<header>
+														<h2>Magna pulvinar tempus</h2>
+													</header>
+													<a href="#" class="image featured"><img src="images/pic05.jpg" alt="" /></a>
+													<p>Rutrum bibendum. Proin pellentesque diam non ligula commodo tempor. Vivamus
+													eget urna nibh. Curabitur non fringilla nisl. Donec accumsan interdum nisi, quis
+													tempus.</p>
+													<a href="#" class="button style1">More</a>
+												</section>
+											</div>
+											<div class="col-6 col-12-small">
+												<section class="box">
+													<header>
+														<h2>Magna pulvinar tempus</h2>
+													</header>
+													<a href="#" class="image featured"><img src="images/pic06.jpg" alt="" /></a>
+													<p>Rutrum bibendum. Proin pellentesque diam non ligula commodo tempor. Vivamus
+													eget urna nibh. Curabitur non fringilla nisl. Donec accumsan interdum nisi, quis
+													tempus.</p>
+													<a href="#" class="button style1">More</a>
+												</section>
+											</div>
+										</div>
+									</div>
+
+							</div>
+							<div class="col-4 col-12-medium">
+
+								<!-- Sidebar -->
+									<div id="sidebar">
+										<section class="box">
+											<header>
+												<h2>Ipsum nullam luctus</h2>
+											</header>
+											<p>Malesuada quis eget eros. Nullam sodales cursus sapien, id consequat
+											leo suscipit ut. Praesent id turpis vitae turpis pretium ultricies. Vestibulum sit
+											amet risus elit.</p>
+											<a href="#" class="button style1">Learn More</a>
+										</section>
+										<section class="box">
+											<header>
+												<h2>Vitae turpis consequat</h2>
+											</header>
+											<ul class="style2">
+												<li>
+													<article class="box post-excerpt">
+														<a href="#" class="image left"><img src="images/pic08.jpg" alt="" /></a>
+														<h3><a href="#">Diam odio lorem</a></h3>
+														<p>Duis odio diam, luctus et vulputate vitae, vehicula ac dolor. Pellentesque at urna eget tellus sed etiam.</p>
+													</article>
+												</li>
+												<li>
+													<article class="box post-excerpt">
+														<a href="#" class="image left"><img src="images/pic09.jpg" alt="" /></a>
+														<h3><a href="#">Sed duis consequat</a></h3>
+														<p>Duis odio diam, luctus et vulputate vitae, vehicula ac dolor. Pellentesque at urna eget tellus sed etiam.</p>
+													</article>
+												</li>
+												<li>
+													<article class="box post-excerpt">
+														<a href="#" class="image left"><img src="images/pic10.jpg" alt="" /></a>
+														<h3><a href="#">Tellus nulla volutpat</a></h3>
+														<p>Duis odio diam, luctus et vulputate vitae, vehicula ac dolor. Pellentesque at urna eget tellus sed etiam.</p>
+													</article>
+												</li>
+											</ul>
+											<a href="#" class="button style1">Archives</a>
+										</section>
+										<section class="box">
+											<header>
+												<h2>Magna diam vehicula</h2>
+											</header>
+											<ul class="style3">
+												<li><a href="#">Lecture-1 โครงสร้างของภาษา Python</a></li>
+												<li><a href="#">Lecture-2 ตัวแปรและประเภทข้อมูล</a></li>
+												<li><a href="#">Orci sem vel libero cras nisi odio</a></li>
+												<li><a href="#">Sed hendrerit massa nam mattis</a></li>
+												<li><a href="#">Turpis vel leo accumsan aliquet</a></li>
+												<li><a href="#">Dapibus mi fermentum fusce non</a></li>
+												<li><a href="#">Arcu laoreet sapien tempus</a></li>
+												<li><a href="#">Nulla iaculis egestas varius</a></li>
+												<li><a href="#">Augue massa feugiat quam pretium</a></li>
+												<li><a href="#">Orci sem vel libero cras nisi odio</a></li>
+												<li><a href="#">Sed hendrerit massa nam mattis</a></li>
+											</ul>
+										</section>
+									</div>
+
+							</div>
+						</div>
+					</div>
+				</section>
+
+			<!-- Footer -->
+				<section id="footer" class="wrapper">
+					<div class="title">The Rest Of It</div>
+					<div class="container">
+						<header class="style1">
+							<h2>Ipsum sapien elementum portitor?</h2>
+							<p>
+								Sed turpis tortor, tincidunt sed ornare in metus porttitor mollis nunc in aliquet.<br />
+								Nam pharetra laoreet imperdiet volutpat etiam feugiat.
+							</p>
+						</header>
+						<div class="row">
+							<div class="col-6 col-12-medium">
+
+								<!-- Contact Form -->
+									<section>
+										<form method="post" action="#">
+											<div class="row gtr-50">
+												<div class="col-6 col-12-small">
+													<input type="text" name="name" id="contact-name" placeholder="Name" />
+												</div>
+												<div class="col-6 col-12-small">
+													<input type="text" name="email" id="contact-email" placeholder="Email" />
+												</div>
+												<div class="col-12">
+													<textarea name="message" id="contact-message" placeholder="Message" rows="4"></textarea>
+												</div>
+												<div class="col-12">
+													<ul class="actions">
+														<li><input type="submit" class="style1" value="Send" /></li>
+														<li><input type="reset" class="style2" value="Reset" /></li>
+													</ul>
+												</div>
+											</div>
+										</form>
+									</section>
+
+							</div>
+							<div class="col-6 col-12-medium">
+
+								<!-- Contact -->
+									<section class="feature-list small">
+										<div class="row">
+											<div class="col-6 col-12-small">
+												<section>
+													<h3 class="icon solid fa-home">Mailing Address</h3>
+													<p>
+														205/5<br />
+														Don Chedi, Don Chedi<br />
+														Suphan Buri, 72170
+													</p>
+												</section>
+											</div>
+											<div class="col-6 col-12-small">
+												<section>
+													<h3 class="icon solid fa-comment">Social</h3>
+													<p>
+														<a href="https://web.facebook.com/Tinnapat45/" target="_blank" >Facebook</a><br />
+														<a href="https://www.instagram.com/tinapat45/" target="_blank" >Instagram</a><br />
+														<a href="https://linevoom.line.me/user/_dTpB75yiOhWRzR9dC6UQfdkKZ9fcxgvADSApnbU?utm_medium=windows" target="_blank" >Line</a>
+													</p>
+												</section>
+											</div>
+											<div class="col-6 col-12-small">
+												<section>
+													<h3 class="icon solid fa-envelope">Email</h3>
+													<p>
+														<a href="#">tinnapat532545@gmail.com</a>
+													</p>
+												</section>
+											</div>
+											<div class="col-6 col-12-small">
+												<section>
+													<h3 class="icon solid fa-phone">Phone</h3>
+													<p>
+														092-916-3250
+													</p>
+												</section>
+											</div>
+										</div>
+									</section>
+
+							</div>
+						</div>
+						<div id="copyright">
+							<ul>
+								<li>&copy; Untitled.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</div>
+				</section>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
