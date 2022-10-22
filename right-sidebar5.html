@@ -64,38 +64,71 @@
 											<header class="style1">
 												<h2>คำสั่งเลือกเงื่อนไข</h2>
 											</header>
-												<img src="images/r5.png" alt="" />
+												<img src="images/r6.png" alt="" />
 
 											<p>ในบทนี้ คุณจะได้เรียนเกี่ยวกับคำสั่งเลือกเงื่อนไขในภาษา Python เราจะพูดถึงการควบคุมการทำงานโปรแกรมด้วยคำสั่ง if, if else และ elif 
 												เพื่อให้โปรแกรมสามารถทำงานซับซ้อนและมีประสิทธิภาพมากขึ้น ยกตัวอย่างเช่น เครื่องปรับอากาศจะทำงานอัตโนมัติถ้าหากอุณหภูมิในห้องสูงหรือต่ำเกินไป 
-												หรือรถยนต์จะแสดงสัญญาณเตือนหากน้ำมันกำลังใกล้จะหมด เป็นต้น ซึ่งทั้งหมดนี้เกิดจากการกำหนดเงื่อนไขการทำงานให้โปรแกรม 
-												มาเริ่มกับคำสั่ง if ในภาษา Python</p>
+												หรือรถยนต์จะแสดงสัญญาณเตือนหากน้ำมันกำลังใกล้จะหมด เป็นต้น ซึ่งทั้งหมดนี้เกิดจากการกำหนดเงื่อนไขการทำงานให้โปรแกรม มาเริ่มกับคำสั่ง if ในภาษา Python</p>
 												
-											<p>Phasellus nisl nisl, varius id porttitor sed, pellentesque ac orci. Pellentesque
-											habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi
-											bibendum justo sed mauris vehicula malesuada aliquam elit imperdiet. Aliquam eu nibh
-											lorem, eget gravida mi. Duis odio diam, luctus et vulputate vitae, vehicula ac dolor.
-											Pellentesque at urna eget tellus lobortis ultrices sed non erat. Donec eget erat non
-											magna volutpat malesuada quis eget eros. Nullam sodales cursus sapien, id consequat
-											leo suscipit ut. Praesent id turpis vitae turpis pretium ultricies. Vestibulum sit
-											amet risus elit.</p>
-											<p>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra
-											ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel. Praesent nec orci
-											eget quam rutrum bibendum. Proin pellentesque diam non ligula commodo tempor. Vivamus
-											eget urna nibh. Curabitur non fringilla nisl. Donec accumsan interdum nisi, quis
-											tincidunt felis sagittis eget. Donec elementum ligula dignissim sem pulvinar non semper
-											odio eleifend. Duis commodo fringilla commodo. Aliquam erat volutpat. Vestibulum
-											facilisis leo magna. Cras sit amet urna eros, id egestas urna. Quisque aliquam
-											tempus euismod. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
-											posuere cubilia.</p>
-											<p>Phasellus nisl nisl, varius id porttitor sed, pellentesque ac orci. Pellentesque
-											habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi
-											bibendum justo sed mauris vehicula malesuada aliquam elit imperdiet. Aliquam eu nibh
-											lorem, eget gravida mi. Duis odio diam, luctus et vulputate vitae, vehicula ac dolor.
-											Pellentesque at urna eget tellus lobortis ultrices sed non erat. Donec eget erat non
-											magna volutpat malesuada quis eget eros. Nullam sodales cursus sapien, id consequat
-											leo suscipit ut. Praesent id turpis vitae turpis pretium ultricies. Vestibulum sit
-											amet risus elit.</p>
+											<p>คำสั่ง if<br>
+												คำสั่ง if เป็นคำสั่งที่ใช้ควบคุมการทำงานของโปรแกรมที่เป็นพื้นฐานและง่ายที่สุด เราใช้คำสั่ง if เพื่อสร้างเงื่อนไขให้โปรแกรมทำงานตามที่เราต้องการเมื่อเงื่อนไขนั้นตรงกับที่เรากำหนด 
+												เช่น การตรวจสอบค่าในตัวแปรกับตัวดำเนินการประเภทต่างๆ นี่เป็นรูปแบบของการใช้งานคำสั่ง if ในภาษา Python</p>
+
+												<img src="images/r6b1.png" alt="" />
+											<p>ในตัวอย่าง เป็นรูปแบบของการใช้งานคำสั่ง if และ expression เป็นเงื่อนไขที่สร้างจากตัวดำเนินการประเภทต่างๆ ที่เป็น boolean expression โดยโปรแกรมจะทำงานในบล็อคคำสั่ง if 
+												ถ้าหากเงื่อนไขเป็น True ไม่เช่นนั้นโปรแกรมจะข้ามการทำงานไป ในบล็อคของคำสั่ง if จะประกอบไปด้วยคำสั่งการทำงานของโปรแกรม คำสั่งทั้งหมดในบล็อคต้องมีระยะเว้นช่องว่างที่เท่ากัน ต่อไปมาดูตัวอย่างการใช้งานคำสั่ง if ในภาษา Python</p>
+
+												<img src="images/r6b2.png" alt="" />
+											<p>ในตัวอย่าง เป็นการใช้งานคำสั่ง if เพื่อกำหนดให้โปรแกรมทำงานตามเงื่อนไขต่างๆ ในบล็อคแรกเป็นการตรวจสอบค่าในตัวแปร n ว่าเท่ากับ 10 หรือไม่ เนื่องจากค่าในตัวแปรนั้นเท่ากับ 10 ทำให้เงื่อนเป็นจริง 
+												และโปรแกรมทำงานในบล็อคของคำสั่ง if และต่อมาเรามีตัวแปร boolean logged_in เก็บค่าสถานะการเข้าสู่ระบบ เราได้ทำการตรวจสอบโดยการใช้ตัวดำเนินการ not สำหรับตรวจสอบว่าถ้าหากผู้ใช้ไม่เข้าสู่ระบบ จะแสดงข้อความบอกว่าต้องเข้าระบบก่อนที่จะใช้งาน</p>
+
+											<p>ต่อมาเป็นการตรวจสอบค่าในตัวแปร m ว่าเป็นทั้งจำนวนเต็มบวกและจำนวนคู่หรือไม่ เราได้ใช้ตัวดำเนินการ and เพื่อเชื่อม expression ย่อยทั้งสอง และเงื่อนไขเป็นจริงทำให้ในบล็อคคำสั่ง if ทำงาน สุดท้ายเป็นเปรียบเทียบค่าของตัวเลข เราได้เปรียบว่า 3 มากกว่า 10 หรือไม่ 
+												เนื่องจากเงื่อนไขเป็น False ทำให้โปรแกรมข้ามการทำงานบล็อคนี้ไป</p>
+
+												<img src="images/r6b3.png" alt="" />
+											<p>นี่เป็นผลลัพธ์การทำงานของโปรแกรม คุณจะเห็นว่าในสามบล็อคแรกของคำสั่ง if นั้นทำงานเพราะว่าเงื่อนไขเป็นจริงหรือ True และในบล็อคสุดท้ายไม่ทำงานเพราะเงื่อนไขไม่เป็นจริงหรือ False</p>
+
+											<p>คำสั่ง if else<br>
+												หลังจากที่คุณได้รู้จักกับคำสั่ง if ไปแล้ว อีกคำสั่งหนึ่งที่ทำงานควบคู่กับคำสั่ง if คือคำสั่ง else clause โดยโปรแกรมจะทำงานในคำสั่ง else ถ้าหากเงื่อนไขในคำสั่ง if นั้นไม่เป็นจริง กล่าวอีกนัยหนึ่ง มันจะทำงานเมื่อเงื่อนไขก่อนหน้านั้นไม่เป็นจริงหรือเป็นเงื่อนไข Default 
+												มาดูตัวอย่างการใช้งาน if else ในภาษา Python</p>
+
+												<img src="images/r6b4.png" alt="" />
+											<p>ในตัวอย่าง เป็นโปรแกรมเพื่อทดสอบการทำงานของคำสั่ง else เราได้เพิ่มบล็อคของคำสั่ง else เข้ามาหลังจากคำสั่ง if ซึ่งโค้ดในบล็อคของคำสัง else จะทำงาน ถ้าหากเงื่อนไขใน if ไม่เป็นจริง นั่นหมายถึงโปรแกรมของเราสามารถทำงานได้เพียงหนึ่งทางเลือกเท่านั้น</p>
+
+											<p>ในการตรวจสอบครั้งแรก เป็นการตรวจสอบค่าในตัวแปร n ว่าเท่ากับ 10 หรือไม่ เพราะว่าค่าในตัวแปรนั้นเป็น 5 ทำให้เงื่อนไขไม่เป็นจริง และโปรแกรมทำงานในบล็อคคำสั่ง else แทน ต่อมาเป็นการตรวจสอบชื่อในตัวแปร name ว่าเป็น"Mateo"หรือไม่ เพราะว่าค่าในตัวแปรนั้นเป็น "James" 
+												ทำให้โปรแกรมทำงานในบล็อคคำสั่ง else และสุดท้ายนั้นเราตรวจสอบว่าหากมีเงินในตัวแปร money มากกว่าหรือเท่ากับ 350 จะได้ซื้อ iPad เพราะว่าเงินไม่พอ โปรแกรมจึงบอกว่าเงินไม่พอที่จะซื้อ</p>
+
+												<img src="images/r6b5.png" alt="" />
+											<p>นี่เป็นผลลัพธ์การทำงานของโปรแกรมซึ่งจะทำงานในบล็อคของคำสั่ง else ทั้งหมดเพราะเงื่อนไขไม่เป็นจริงทั้งหมด</p>
+
+											<p>คำสั่ง if elif<br>
+												คำสั่ง elif นั้นเป็นคำสั่งที่ใช้สำหรับสร้างเงื่อนไขแบบหลายทางเลือกให้กับโปรแกรมที่มีการทำงานเช่นเดียวกับ switch case ในภาษาอื่นๆ คำสั่ง elif นั้นต้องใช้หลังจากคำสั่ง if เสมอและสามารถมี else ได้ในเงื่อนไขสุดท้าย มาดูตัวอย่างการใช้งานคำสั่ง elif ในภาษา Python</p>
+
+												<img src="images/r6b6.png" alt="" />
+											<p>ในตัวอย่าง เป็นโปรแกรมจำลองในการเลือกโหมดของการเล่นเกม เราได้ให้ผู้ใช้กรอกค่าระหว่าง 1 -4 เพื่อใช้ในการเปรียบเทียบกับระดับความยากของเกม โดยที่ 1 เป็นระดับที่ง่ายที่สุด และ 4 นั้นเป็นระดับที่ยากที่สุด คุณจะเห็นว่าเราได้ให้คำสั่ง elif เพราะเรามีเงื่อนไข 4 แบบ และคำสั่ง else 
+												ในการณีที่ตัวเลขที่ผู้เล่นกรอกเข้ามานั้นไม่ตรงกับเงื่อนไขใดๆ ก่อนหน้าเลย</p>
+
+												<img src="images/r6b7.png" alt="" />
+												<img src="images/r6b8.png" alt="" />
+											<p>นี่เป็นผลลัพธ์การทำงานของโปรแกรมเมื่อเรากรอก 4 และ 7 ตามลำดับ เมื่อเรากรอก 4 นั้นโปรแกรมตรงกับเงื่อนไขของ elif ที่ level == 4 และเมื่อเรากรอก 7 โปรแกรมไม่ตรงกับเงื่อนไขใดๆ เลยทำให้ทำงานในบล็อคของคำสั่ง else</p>
+
+											<p>ตัวอย่างการใช้งานคำสั่งเลือกเงื่อนไขในภาษา Python<br>
+												หลังจากที่คุณได้เรียนในคำสั่งเลือกเงื่อนไขประเภทต่างๆ ในภาษา Python ไปแล้ว ต่อไปจะเป็นการนำมาประยุกต์เขียนโปรแกรมเพื่อบอกเวลาในรูปแบบของ "เวลาที่ผ่านไป" ซึ่งการแสดงเวลาในรูปแบบนี้ สามารถทำให้ทราบว่าเวลาที่เกิดขึ้นในอดีตผ่านไปนานเท่าไหร่แล้ว ซึ่งมีการใช้งานเป็นจำนวนมากในเว็บไซต์ประเภทต่างๆ 
+												เช่น Facebook Twitter เป็นต้น นี่เป็นโค้ดของโปรแกรม</p>
+
+												<img src="images/r6b9.png" alt="" />
+												<img src="images/r6b10.png" alt="" />
+											<p>ในตัวอย่าง เป็นโปรแกรมบอกเวลาในรูปแบบของเวลาที่ผ่านไป ในตัวแปร now เป็นตัวแปรสำหรับเก็บออบเจ็คของวันที่ ที่เราจะใช้อ้างอิงในการคำนวณว่าเวลาผ่านไปนานเท่าไหร่แล้วจนถึงวันนี้ สมมติว่าวันนี้เป็นวันที่ March 29, 2017 เวลา 11 AM เราทำแบบนี้เพื่อไม่ต้องการให้ผลลัพธ์ของเวลาเปลี่ยนไป ซึ่งในการใช้งานในโปรแกรมจริง 
+												ค่าของ now นั้นเราจะใช้เป็น datetime.datetime.now() แทน</p>
+
+												<img src="images/r6b11.png" alt="" />
+											<p>หลังจากนั้น เราสร้างออบเจ็ค datetime ของวันและเวลาที่ต้องการคำนวณเข้าไปใน List date_list เราได้เพิ่มช่วงเวลาต่างๆ อย่างหลากหลายเพื่อให้คุณเห็นผลลัพธ์การทำงานของโปรแกรมอย่างทั่วถึง หลังจากนั้นเราใช้คำสั่ง for loop ในการวนอ่านค่าวันที่ใน List</p>
+
+
+
+
+
+
 										</article>
 										<div class="row gtr-150">
 											<div class="col-6 col-12-small">
