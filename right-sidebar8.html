@@ -62,40 +62,107 @@
 									<div id="content">
 										<article class="box post">
 											<header class="style1">
-												<h2>คำสั่งเลือกเงื่อนไข</h2>
+												<h2>String ในภาษา Python</h2>
 											</header>
-												<img src="images/r5.png" alt="" />
+												<img src="images/r9.png" alt="" />
 
-											<p>ในบทนี้ คุณจะได้เรียนเกี่ยวกับคำสั่งเลือกเงื่อนไขในภาษา Python เราจะพูดถึงการควบคุมการทำงานโปรแกรมด้วยคำสั่ง if, if else และ elif 
-												เพื่อให้โปรแกรมสามารถทำงานซับซ้อนและมีประสิทธิภาพมากขึ้น ยกตัวอย่างเช่น เครื่องปรับอากาศจะทำงานอัตโนมัติถ้าหากอุณหภูมิในห้องสูงหรือต่ำเกินไป 
-												หรือรถยนต์จะแสดงสัญญาณเตือนหากน้ำมันกำลังใกล้จะหมด เป็นต้น ซึ่งทั้งหมดนี้เกิดจากการกำหนดเงื่อนไขการทำงานให้โปรแกรม 
-												มาเริ่มกับคำสั่ง if ในภาษา Python</p>
+											<p>ในบทนี้ คุณจะได้เรียนรู้เกี่ยวกับ String ในภาษา Python เราจะพูดเกี่ยวกับการประกาศและใช้งาน String 
+												ในรูปแบบต่างๆ เพราะว่าเนื้อหาเกี่ยวกับ String นั้นมีค่อนข้างมาก ดังนั้นเราจึงได้รวบรวมเนื้อหาทั้งหมดไว้ในบทนี้ 
+												และเราจะแนะนำการใช้งาน built-in function ในภาษา Python ที่สำคัญในการจัดการกับข้อมูลประเภท String</p>
 												
-											<p>Phasellus nisl nisl, varius id porttitor sed, pellentesque ac orci. Pellentesque
-											habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi
-											bibendum justo sed mauris vehicula malesuada aliquam elit imperdiet. Aliquam eu nibh
-											lorem, eget gravida mi. Duis odio diam, luctus et vulputate vitae, vehicula ac dolor.
-											Pellentesque at urna eget tellus lobortis ultrices sed non erat. Donec eget erat non
-											magna volutpat malesuada quis eget eros. Nullam sodales cursus sapien, id consequat
-											leo suscipit ut. Praesent id turpis vitae turpis pretium ultricies. Vestibulum sit
-											amet risus elit.</p>
-											<p>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra
-											ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel. Praesent nec orci
-											eget quam rutrum bibendum. Proin pellentesque diam non ligula commodo tempor. Vivamus
-											eget urna nibh. Curabitur non fringilla nisl. Donec accumsan interdum nisi, quis
-											tincidunt felis sagittis eget. Donec elementum ligula dignissim sem pulvinar non semper
-											odio eleifend. Duis commodo fringilla commodo. Aliquam erat volutpat. Vestibulum
-											facilisis leo magna. Cras sit amet urna eros, id egestas urna. Quisque aliquam
-											tempus euismod. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
-											posuere cubilia.</p>
-											<p>Phasellus nisl nisl, varius id porttitor sed, pellentesque ac orci. Pellentesque
-											habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi
-											bibendum justo sed mauris vehicula malesuada aliquam elit imperdiet. Aliquam eu nibh
-											lorem, eget gravida mi. Duis odio diam, luctus et vulputate vitae, vehicula ac dolor.
-											Pellentesque at urna eget tellus lobortis ultrices sed non erat. Donec eget erat non
-											magna volutpat malesuada quis eget eros. Nullam sodales cursus sapien, id consequat
-											leo suscipit ut. Praesent id turpis vitae turpis pretium ultricies. Vestibulum sit
-											amet risus elit.</p>
+											<p>การประกาศตัวแปร String<br>
+												String เป็นลำดับของตัวอักษรหลายตัวเรียงต่อกัน ซึ่งในภาษา Python นั้นการที่จะประกาศ String ค่าของมันจะอยู่ในเครื่องหมาย Double quote หรือ Single quote เท่านั้น
+												มาดูตัวอย่างการประกาศตัวแปรของ String</p>
+
+												<img src="images/r9b1.png" alt="" />
+											<p>ในตัวอย่าง เราได้ประกาศ 4 ตัวแปรของ String คุณจะสังเกตว่าในการกำหนดค่าให้กับตัวแปรนั้น String literal จะถูกภายในเครืองหมาย Double quote ("") หรือ Single quote ('') เท่านั้น 
+												ซึ่งได้ผลการทำงานที่เหมือนกัน ขนาดของ String นั้นจะขึ้นกับจำนวนตัวอักษรภายใน String</p>
+
+											<p>อย่างไรก็ตาม ถึงแม้เราจะสามารถใช้ Double quote หรือ Single quote กับ String ได้ แต่มีสิ่งที่แตกต่างกันเล็กน้อยสำหรับการใช้งานทั้งสองแบบคือการใช้ตัวอักษรพิเศษใน String หรือเรียกว่า Escape character ลองมาดูตัวอย่างต่อไปนี้</p>
+
+												<img src="images/r9b2.png" alt="" />
+											<p>ในตัวอย่าง เป็นสิ่งที่แตกต่างของการประกาศ String ทั้งสองแบบกับ Escape character ซึ่งตัวอักษร ' และ " นั้นเป็น Escape character ดังนั้นในการใช้งานตัวอักษรเหล่านี้ เราต้องใส่เครื่องหมาย \ ลงไปข้างหน้าเสมอ แต่ในภาษา Python 
+												เมื่อคุณใช้ Double quote ในการประกาศ String คุณไม่ต้องทำการ Escape character สำหรับ Single quote และในทางกลับกัน</p>
+
+												<img src="images/r9b3.png" alt="" />
+											<p>นี่เป็นผลลัพธ์การทำงานของโปรแกรมที่แสดงให้เห็นถึงความแตกต่างของการใช้ Double quote และ Single quote</p>	
+
+												<img src="images/r9b4.png" alt="" />
+											<p>ในภาษา Python มีอีกวิธีหนึ่งในการประกาศตัวแปร String คือการกำหนดค่าแบบ raw string ในตัวอย่างข้างบน เราใช้ตัวอักษร r ก่อนหน้าเครื่องหมาย ' หรือ " ซึ่ง raw string เป็นการแปลง String 
+												ให้เหมือนกับที่กำหนดใน String literal เสมอ</p>
+
+												<img src="images/r9b5.png" alt="" />
+											<p>นี่เป็นผลลัพธ์การทำงานของโปรแกรม</p>
+
+											<p>นอกจากนี้ เรายังสามารถประกาศ String แบบหลายบรรทัดได้ โดยการครอบด้วยเครื่องหมาย """ หรือ ''' String literal ที่ปรากฎภายในเครื่องหมายนี้จะเป็น raw string ที่จะทำการ Escape ให้อัตโนมัติ มาดูตัวอย่าง</p>
+
+												<img src="images/r9b6.png" alt="" />
+											<p>ในตัวอย่าง เป็นการประกาศตัวแปร String แบบการใช้หลายบรรทัด String literal ทั้งหมดนั้นจะต้องอยู่ภายใน """ เนื่องจากเราต้องการจัดรูปแบบของ String ให้สวยงาม ดังนั้นเราจึงต้อง Newline ลงมาเขียนในบรรทัดถัดมา ดังนั้นเราสามารถใช้เครื่องหมาย \ 
+												เพื่อลบ Newline ออกไปได้</p>
+
+												<img src="images/r9b7.png" alt="" />
+											<p>นี่เป็นผลลัพธ์การทำงานของโปรแกรม</p>
+
+											<p>String concatenation<br>
+												เช่นเดียวกับในภาษาอื่นๆ ในภาษา Python คุณสามารถเชื่อมต่อตั้งแต่สอง String เข้าด้วยกันได้ โดยการใช้เครื่องหมายบวก (+) ถึงแม้ว่านี่เป็นตัวดำเนินการทางคณิตศาสตร์ที่ใช้สำหรับบวกค่าของตัวเลข แต่เมื่อนำมาใช้กับ String จะเป็นการเชื่อมต่อ String 
+												เข้าด้วยกันแทนหรือเรียกว่า Operator overloading มาดูตัวอย่างการเชื่อมต่อ String</p>
+
+												<img src="images/r9b8.png" alt="" />
+											<p>ในตัวอย่าง เป็นการเชื่อมต่อ String ในภาษา Python เรามีตัวแปร first_name สำหรับเก็บชื่อ และตัวแปร last_name สำหรับเก็บนามสกุล และเราสร้างตัวแปร full_name เพื่อเก็บชื่อแบบเต็มโดยการนำ String จากทั้งสองตัวแปรก่อนหน้ามาเชื่อมต่อกัน 
+												ซึ่งเป็นการเชื่อมต่อ String จากตัวแปร และในตัวแปร bless เป็นการเชื่อมต่อจาก String literal โดยตรงเพื่อสร้างคำอวยพรในวันคริสมาสต์ นี่เป็นผลลัพธ์การทำงานของโปรแกรม</p>
+
+												<img src="images/r9b9.png" alt="" />
+											<p>ในภาษา Python คุณยังสามารถเชื่อมต่อ String ได้ด้วยวิธีอื่นอีก เช่น White-space Tab หรือ Newline โดย String literal ที่คั่นด้วยช่องว่างในบรรทัดเดียวกันจะถูกนำมาต่อกันอัตโนมัติโดยตัวแปรของภาษา และคุณสามารถเชื่อมต่อโดยที่ String อยู่คนละบรรทัดได้ด้วยการใช้ \ 
+												ต่อท้ายสำหรับบอกว่าคำสั่งมีอยู่ในบรรทัดต่อไป มาดูตัวอย่าง</p>
+
+												<img src="images/r9b10.png" alt="" />
+											<p>ในตัวอย่าง เป็นการเชื่อมต่อ String โดยการใช้ช่องว่างและการขึ้นบรรทัดใหม่ และในการเขียนโปรแกรม เราแนะนำให้คุณใช้วิธีการใช้เครื่องหมาย + เพื่อให้การเขียนโปรแกรมเป็นไปในรูปแบบเดียวกัน อย่างไรก็ตาม คุณสามารถเลือกใช้แบบต่างๆ ได้ตามความเหมาะสมของโปรแกรม</p>
+
+												<img src="images/r9b11.png" alt="" />
+											<p>นี่เป็นผลลัพธ์การทำงานของโปรแกรมในการเชื่อมต่อ String เข้าด้วยกัน</p>
+
+											<p>Charterers of string<br>
+												เนื่องจาก String นั้นเกิดจากตัวอักษรหลายๆ ตัวต่อกันจนเกิดเป็น String หรือกล่าวอีกนัยหนึ่งก็คือ String คืออาเรย์ของตัวอักษร ดังนั้นเราจึงสามารถเข้าถึงตัวอักษรตำแหน่งต่างๆ ของ String ได้ผ่านทาง Index ของมัน เช่นเดียวกับการเข้าถึงข้อมูลใน List มาดูตัวอย่าง</p>
+
+												<img src="images/r9b12.png" alt="" />
+											<p>ในตัวอย่าง เป็นการเข้าถึงตำแหน่งของตัวอักษรในตัวแปร String s เราสามารถเข้าถึงด้วยการใช้ Index ในเครื่องหมาย [] โดยที่ Index ของ String นั้นจะเริ่มจาก 0 สำหรับตำแหน่งแรก และเพิ่มขึ้นทีละ 1 ไปจนถึงตำแหน่งสุดท้าย</p>
+
+												<img src="images/r9b13.png" alt="" />
+											<p>นี่เป็นผลลัพธ์การทำงานของโปรแกรม</p>
+
+												<img src="images/r9b14.png" alt="" />
+											<p>อย่างไรก็ตาม การทำงานกับ String ผ่านทาง Index นั้นสามารถอ่านค่าได้เพียงอย่างเดียว และไม่สามารถแก้ไขค่าได้ (Immutable) จากตัวอย่างข้างบนจึงทำให้เกิดข้อผิดพลาดขึ้น เพราะเราพยายามที่จะเปลี่ยนแปลงค่าของ String ผ่านทาง Index ของมัน</p>
+
+												<img src="images/r9b15.png" alt="" />
+											<p>เนื่องจาก String นั้นเป็นอาเรย์ของตัวอักษร ดังนั้นมันจึงสะดวกที่จะใช้คำสั่ง For loop วนอ่านค่าจากใน String ทีละตัวอักษร ในตัวอย่างข้างบน เป็นการวนอ่านค่าโดยการใช้คำสั่ง For วนอ่านค่าใน String สำหรับลูปแรก และในลูปที่สอง เราใช้คำสั่ง For สร้าง Index ตั้งแต่ 0 ถึงตำแหน่งสุดท้ายของ String และวนอ่านค่า</p>
+
+												<img src="images/r9b16.png" alt="" />
+											<p>นี่เป็นผลลัพธ์การทำงานของโปรแกรม</p>
+
+											<p>นอกจากนี้ ในภาษา Python นั้นยังสนับสนุนการตัดคำใน String ด้วย Index โดยการตัดเอาส่วนย่อยๆ ภายใน String มาดูตัวอย่างการใช้งาน การตัดคำใน String</p>
+
+												<img src="images/r9b17.png" alt="" />
+											<p>ในตัวอย่าง เป็นการตัดคำด้วย Index ในการใช้งานนั้นจะมีรูปแบบเป็น [start:end] โดยที่ start นั้นเป็นตำแหน่งของ Index เริ่มต้นที่ต้องการ และ end นั้นเป็นตำแหน่งก่อนหน้าตำแหน่งสุดท้ายของตัวอักษรที่ต้องการ เหมือนในตัวอย่างของการตัดคำในตัวแปร s1</p>
+
+											<p>และถ้าหากคุณปล่อยให้ตำแหน่ง start ให้ว่าง นั้นหมายความว่าเป็นการเริ่มมาจากตำแหน่งแรกของ String หรือหากคุณปล่อยให้ end ให้ว่าง เป็นการตัดจากตำแหน่งที่กำหนดไปจนสิ้นสุด String เหมือนในตัวแปร s2</p>
+
+												<img src="images/r9b18.png" alt="" />
+											<p>นี่เป็นผลลัพธ์การทำงานของของโปรแกรมในการตัด String ด้วย Index</p>
+
+											<p>และนอกจากนี้ เรายังสามารถหาความยาวของ String โดยการใช้ฟังก์ชันที่มากับภาษา Python คือฟังก์ชัน len() สำหรับหาขนาดของตัวอักษรของ String ที่ระบุ ซึ่งจะได้ผลลัพธ์กลับมาเป็น Integer นี่เป็นตัวอย่างการหาความยาวของ String</p>
+
+												<img src="images/r9b19.png" alt="" />
+											<p>ในตัวอย่าง เป็นการใช้ฟังก์ชัน len() สำหรับหาความยาวของตัวแปร String สามตัวแปร และแสดงผลความยาวนั้นออกทาง console ซึ่งจะได้ผลลัพธ์ดังข้างล่าง</p>
+
+												<img src="images/r9b20.png" alt="" />
+											<p>ในบทนี้ คุณได้เรียนรู้เกี่ยวกับข้อมูลประเภท String ในภาษา Python การประกาศและใช้งานตัวแปรในรูปแบบต่างๆ รวมถึงการเชื่อมต่อ String เข้าด้วยกัน นอกจากนี้ คุณยังทราบว่าเราสามารถเข้าถึงตัวอักษรใน String ผ่านทาง Index ของมันและเราพูดถึงฟังก์ชันในการหาความยาวของ String ในบทต่อไป จะเป็นการใช้งานฟังก์ชันมาตรฐานในภาษา Python เพื่อจัดการกับ String</p>
+
+
+
+
+
+
+											
 										</article>
 										<div class="row gtr-150">
 											<div class="col-6 col-12-small">
