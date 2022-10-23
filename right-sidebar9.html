@@ -1,0 +1,352 @@
+<!DOCTYPE HTML>
+<!--
+	Escape Velocity by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Right Sidebar - Escape Velocity by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="right-sidebar is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<section id="header" class="wrapper">
+
+					<!-- Logo -->
+						<div id="logo">
+							<h1><a href="index.html">Tinnapat Dokmaiteds</a></h1>
+							<p>Escape Velocity</p>
+						</div>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="index.html">Home</a></li>
+								<li>
+									<a href="#">Menu</a>
+									<ul>
+										<li><a href="no-sidebar1.html">What is Python ?</a></li>
+										<li><a href="no-sidebar2.html">What is GitHub ?</a></li>
+										<li><a href="no-sidebar3.html">How to Download Python ?</a></li>
+										<li><a href="no-sidebar4.html">How to Download GitHub ?</a></li>
+										<li>
+											<a href="#">Sed consequat</a>
+											<ul>
+												<li><a href="https://www.python.org/downloads/">Download Pythonr</a></li>
+												<li><a href="https://github.com/">Download GITHUB</a></li>
+												<li><a href="https://git-scm.com/downloads">Download GITBASH</a></li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li class="current"><a href="right-sidebar.html">Lecture Slides</a></li>
+								<li><a href="no-sidebar.html">History</a></li>
+							</ul>
+						</nav>
+
+				</section>
+
+			<!-- Main -->
+				<section id="main" class="wrapper style2">
+					<div class="title">lESSON-4</div>
+					<div class="container">
+						<div class="row gtr-150">
+							<div class="col-8 col-12-medium">
+
+								<!-- Content -->
+									<div id="content">
+										<article class="box post">
+											<header class="style1">
+												<h2>String methods</h2>
+											</header>
+												<img src="images/r10.png" alt="" />
+
+											<p>ในบทก่อนหน้า เราได้พูดเกี่ยวกับการใช้งาน String ในเบื้องต้นไปแล้ว ในบทนี้ เราจะแนะนำเมธอดและการใช้งานเมธอดในคลาส String 
+												ในภาษา Python นั้น String เป็นคลาสมาตรฐานสำหรับจัดการข้อมูลประเภทข้อความ 
+												และในคลาสจะมีเมธอดสำหรับจัดการข้อมูลและอำนวยความสะดวกในการเขียนโปรแกรมเป็นอย่างมากและช่วยลดเวลาในการเขียนโปรแกรมของคุณ</p>
+												
+											<p>Find and search<br>
+												ในคลาสของ String มีเมธอดประเภทต่างๆ ในการจัดการกับ String เมธอดกลุ่มแรกที่เราจะแนะนำให้คุณรู้จักคือเมธอดเกี่ยวกับการค้นหาและตรวจสอบตำแหน่งภายใน String 
+												มาดูตัวอย่างของการใช้เมธอดดังกล่าวในภาษา Python</p>
+
+												<img src="images/r10b1.png" alt="" />
+											<p>ในตัวอย่าง เป็นการใช้งานเมธอดในการค้นหาและการทำงานกับตำแหน่งใน String โดยเมธอด startswith() เป็นเมธอดในการตรวจสอบว่า String นั้นเริ่มต้นด้วย 'moun' หรือไม่ 
+												และเมธอด endswith() เพื่อตรวจสอบว่า String นั้นจบด้วย 'in' หรือไม่ เพราะว่าข้อมูลใน String นั้นตรงกับเงื่อนไขดังกล่าวซึ่งมีค่าเป็นจริง</p>
+
+												<img src="images/r10b2.png" alt="" />
+											<p>ต่อไปเป็นการใช้เมธอด find() เพื่อค้นหาตำแหน่ง Index ของ Sub string 'n' ที่พบครั้งแรกใน String และเมธอด rfind() เป็นการค้นหาจากด้านหลังจากตำแห่งแรกที่พบเช่นกัน 
+												ซึ่งจะได้ Index เป็น 3 และ 7 ตามลำดับ</p>
+
+												<img src="images/r10b3.png" alt="" />
+											<p>และเมธอด replace() เป็นการใช้สำหรับแทนที่คำใน Srting โดยเราได้ทำการแทนที่ 'moun' ด้วย 'con' ซึ่งถ้าหากคำดังกล่าวพบมากกว่าหนึ่งครั้งใน String จะทำการแทนที่ทั้งหมดที่เจอ และเมธอด count() 
+												ใช้สำหรับนับตัวอักษรที่ระบุที่พบใน String เราได้ทำการนับว่าพบตัวอักษร 'a' เป็นจำนวนเท่าไหร่ใน String</p>
+
+												<img src="images/r10b4.png" alt="" />
+											<p>นี่เป็นผลลัพธ์การทำงานของโปรแกรม ในการใช้เมธอดเกี่ยวกับการค้นหาและทำงานในตำแหน่งของ String</p>
+
+											<p>Text and sentence<br>
+												ในภาษา Python คลาสของ String ยังมีเมธอดในการทำงานเกี่ยวกับ text และข้อความ เมธอดเหล่านี้มักจะใช้สำหรับการจัดแสดงผลข้อความในโปรแกรมหรือเว็บไซต์ให้อยู่ในรูปแบบเดี่ยวกัน 
+												เช่น การเปลี่ยนตัวแรกของประโยคให้เป็นตัวพิมพ์ใหญ่ หรือแสดงข้อความในตัวพิมพ์เล็กหรือตัวพิมพ์ใหญ่ เป็นต้น มาดูตวอย่างการใช้งาน</p>
+
+												<img src="images/r10b5.png" alt="" />
+											<p>ในตัวอย่าง เป็นการใช้งานเมธอดต่างๆ ในการจัดการกับข้อความ เมธอด capitalize() ใช้สำหรับทำให้ตัวอักษรตัวแรกของ String เป็นตัวพิมพ์ใหญ่ ในขณะที่เมธอด title() นั้นจะทำให้ตัวแรกในทุกๆ คำที่คั่นด้วย white space เป็นตัวพิมพ์ใหญทั้งหมด</p>
+
+											<p>สำหรับเมธอด upper() แปลงให้ตัวอักษรทุกตัวใน String เป็นตัวพิมพ์ใหญ่ และเมธอด lower() แปลงให้ตัวอักษรทุกตัวใน String เป็นตัวพิมพ์เล็ก</p>
+
+												<img src="images/r10b6.png" alt="" />
+											<p>นี่เป็นผลลัพธ์การทำงานของโปรแกรม ในการใช้งานเมธอดจัดการกับข้อความเกี่ยวกับตัวพิมพ์ใหญ่และตัวพิมพ์เล็ก</p>
+
+											<p>Formatting string<br>
+												ในภาษา Python นั้นคลาสของ String ยังมีเมธอดในการจัดรูปแบบของ String สำหรับการแสดงผลอีกด้วย เช่น การเติมตัวอักษรเข้าไปใน String หรือการลบตัวอักษรที่ไม่ต้องการออกไปจาก String มาดูตัวอย่างการใช้งาน</p>
+
+												<img src="images/r10b7.png" alt="" />
+											<p>ใน 3 เมธอดแรก คือเมธอดที่ใช้ในการเติมตัวอักษรเข้าไปในข้อความให้ได้ตามจำนวนที่ต้องการ เมธอด center() ใช้สำหรับเติมข้อความเข้าไปทางซ้ายและทางขวาให้ String มีความยาวกับที่ระบุ ส่วนเมธอด ljust() 
+												นั้นทำงานเช่นเดียวกันแต่เติมตัวอักษรเฉพาะทางซ้าย และเมธอด rjust() เติมตัวอักษรเพียงด้านขวา อาร์กิวเมนต์แรกเป็นจำนวนของ String ทั้งหมด ส่วนอาร์กิวเมนต์ที่สองเป็นทางเลือกโดยเป็นตัวอักษรที่ต้องการเติมลงไป 
+												และมีค่า Default เป็น Space และเมธอด zfill() เป็นการใช้เติมตัวเลข 0 โดยเรามักจะใช้กับ String ที่มีรูปแบบเป็นตัวเลข</p>
+
+												<img src="images/r10b8.png" alt="" />
+											<p>นี่เป็นผลลัพธ์การทำงานของโปรแกรมในการใช้เมธอดสำหรับเติมข้อความ ในกลุ่มคำสั่งแรกเป็นการเติมช่องว่างลงไปทางซ้ายและขวาของ 'Python' และหลังจากนั้นเติมเครื่องหมาย '#' และสุดท้ายเติมเลข 0 ลงไปข้างหน้าของ String ในรูปแบบตัวเลข</p>
+
+												<img src="images/r10b9.png" alt="" />
+											<p>นอกจากเมธอดในการเติมข้อความแล้ว ยังมีเมธอดในการตัดคำออกจากข้อความด้วยเช่นกัน โดยเมธอด strip() ใช้สำหรับตัดลำดับของตัวอักษรที่พบในทางซ้ายและทางขวาออกไป เมธอด rstrip() นั้นจะตัดเพียงทางขวา และเมธอด lstrip() 
+												จะตัดเพียงทางซ้าย อาร์กิวเมนต์เป็นตัวอักษรที่คุณต้องการตัด และมีค่า Default เป็น Space ถ้าหากคุณเว้นว่างไว้</p>
+
+												<img src="images/r10b10.png" alt="" />	
+											<p>นี่เป็นผลลัพธ์การทำงานของโปรแกรม ในกลุ่มคำสั่งแรกเป็นการตัดช่องว่างออกไปจากทางซ้ายและขวาของ String และกลุ่มต่อไปเป็นการตัดตัวอักษร - ออกไปจากทางซ้ายและขวาของ String</p>
+
+											<p>ในภาษา Python ยังมีเมธอด format() สำหรับจัดรูปแบบการแสดงผลของ String ที่เรียกว่า String interpolation การทำงานของเมธอดนั้นจะคล้ายกับการจัดการแสดงผลในฟังก์ชัน print() มาดูตัวอย่างการใช้งาน</p>
+
+												<img src="images/r10b11.png" alt="" />
+											<p>ในการใช้งานเมธอด format() นั้นเราต้องกำหนดรูปแบบการแสดงผลให้กับ String ในรูปแบบ {n} โดยที่ n นั้นเป็นลำดับของอาร์กิวเมนต์ที่ส่งเข้าไปในเมธอดซึ่งเป็นจำนวนเต็มที่เริ่มจาก 0 ไปเรื่อยๆ ในคำสั่งแรกนั้นมีเพียงหนึ่งอาร์กิวเมนต์ และในคำสั่งที่สองนั้นมีสองอาร์กิวเมนต์ เราจะเพิ่ม {1} เข้ามาสำหรับอาร์กิวเมนต์ที่สอง</p>
+
+												<img src="images/r10b12.png" alt="" />
+											<p>นี่เป็นผลลัพธ์การทำงานของโปรแกรม</p>
+
+											<p>Type checking<br>
+												เมธอดที่สำคัญในคลาส String อีกกลุ่มหนึ่งคือเมธอดในการตรวจสอบประเภทข้อมูลภายใน String ว่าเป็นประเภทที่กำหนดหรือไม่ เช่น การตรวจสอบหาว่ามีตัวเลขภายใน String หรือไม่ หรือตรวจสอบว่า String นั้นเป็นตัวเลขหรือไม่ เป็นต้น มาดูตัวอย่างการใช้งาน</p>
+
+												<img src="images/r10b13.png" alt="" />
+											<p>ในตัวอย่าง เป็นทดสอบการตรวจสอบ String ด้วยเมธอดต่างๆ สำหรับการตรวจสอบที่เป็นจริงและไม่เป็นจริง สำหรับการทดสอบที่ไม่เป็นจริงนั้นเราได้คอมเมนต์เหตุผลที่ทำให้ไม่เป็นจริงด้วย และนี่เป็นผลลัพธ์การทำงานของโปรแกรม</p>
+
+												<img src="images/r10b14.png" alt="" />
+
+											<p>List and sequence methods<br>
+												นอกจากนี้ในคลาส String ยังมีเมธอดที่ทำงานเกี่ยวกับ List ในการรวม String จากลิสต์เข้าด้วยกันด้วยเมธอด join() หรือการตัดคำออกจาก String ด้วยเมธอด split() หรือเมธอด splitlines() นี่เป็นตัวอย่างการใช้งานเมธอดเหล่านี้</p>
+
+												<img src="images/r10b15.png" alt="" />
+											<p>ในตัวอย่าง เรามีตัวแปรลิสต์ countries สำหรับเก็บข้อมูลของประเทศต่างๆ เราใช้เมธอด join() เพื่อรวม String ในลิสต์เข้าด้วยกันโดยคั่นด้วย ', ' และในตัวแปร lang นั้นเป็นข้อความที่คั่นด้วยช่องว่าง เราใช้เมธอด split() เพื่อแยก String ออกจากตัวแปรและจะได้ผลลัพธ์เป็นลิสต์ 
+												คุณสามารถใช้ตัวอักษรอื่นได้โดยใส่ในอาร์กิวเมนต์ของเมธอด สำหรับเมธอด splitlines() เป็นการแบ่ง String ด้วยการขึ้นบรรทัดใหม่</p>
+
+												<img src="images/r10b16.png" alt="" />
+											<p>นี่เป็นผลลัพธ์การทำงานของโปรแกรม</p>
+
+											<p>ในบทนี้ คุณได้รู้จักกับการใช้งานเมธอดจากคลาส String ในรูปแบบต่างๆ เช่น เมธอดในการค้นหาข้อความและ Index ของ String เมธอดในการทำงานเพื่อแปลง String เป็นตัวพิมพ์เล็กและตัวพิมพ์ใหญ่ เมธอดที่ใช้ในการจัดรูปแบบของ String เมธอดในการตรวจสอบประเภทและข้อมูลใน String เป็นต้น</p>
+
+
+
+
+
+
+
+										</article>
+										<div class="row gtr-150">
+											<div class="col-6 col-12-small">
+												<section class="box">
+													<header>
+														<h2>Magna pulvinar tempus</h2>
+													</header>
+													<a href="#" class="image featured"><img src="images/pic05.jpg" alt="" /></a>
+													<p>Rutrum bibendum. Proin pellentesque diam non ligula commodo tempor. Vivamus
+													eget urna nibh. Curabitur non fringilla nisl. Donec accumsan interdum nisi, quis
+													tempus.</p>
+													<a href="#" class="button style1">More</a>
+												</section>
+											</div>
+											<div class="col-6 col-12-small">
+												<section class="box">
+													<header>
+														<h2>Magna pulvinar tempus</h2>
+													</header>
+													<a href="#" class="image featured"><img src="images/pic06.jpg" alt="" /></a>
+													<p>Rutrum bibendum. Proin pellentesque diam non ligula commodo tempor. Vivamus
+													eget urna nibh. Curabitur non fringilla nisl. Donec accumsan interdum nisi, quis
+													tempus.</p>
+													<a href="#" class="button style1">More</a>
+												</section>
+											</div>
+										</div>
+									</div>
+
+							</div>
+							<div class="col-4 col-12-medium">
+
+								<!-- Sidebar -->
+									<div id="sidebar">
+										<section class="box">
+											<header>
+												<h2>Ipsum nullam luctus</h2>
+											</header>
+											<p>Malesuada quis eget eros. Nullam sodales cursus sapien, id consequat
+											leo suscipit ut. Praesent id turpis vitae turpis pretium ultricies. Vestibulum sit
+											amet risus elit.</p>
+											<a href="#" class="button style1">Learn More</a>
+										</section>
+										<section class="box">
+											<header>
+												<h2>Vitae turpis consequat</h2>
+											</header>
+											<ul class="style2">
+												<li>
+													<article class="box post-excerpt">
+														<a href="#" class="image left"><img src="images/pic08.jpg" alt="" /></a>
+														<h3><a href="#">Diam odio lorem</a></h3>
+														<p>Duis odio diam, luctus et vulputate vitae, vehicula ac dolor. Pellentesque at urna eget tellus sed etiam.</p>
+													</article>
+												</li>
+												<li>
+													<article class="box post-excerpt">
+														<a href="#" class="image left"><img src="images/pic09.jpg" alt="" /></a>
+														<h3><a href="#">Sed duis consequat</a></h3>
+														<p>Duis odio diam, luctus et vulputate vitae, vehicula ac dolor. Pellentesque at urna eget tellus sed etiam.</p>
+													</article>
+												</li>
+												<li>
+													<article class="box post-excerpt">
+														<a href="#" class="image left"><img src="images/pic10.jpg" alt="" /></a>
+														<h3><a href="#">Tellus nulla volutpat</a></h3>
+														<p>Duis odio diam, luctus et vulputate vitae, vehicula ac dolor. Pellentesque at urna eget tellus sed etiam.</p>
+													</article>
+												</li>
+											</ul>
+											<a href="#" class="button style1">Archives</a>
+										</section>
+										<section class="box">
+											<header>
+												<h2>Magna diam vehicula</h2>
+											</header>
+											<ul class="style3">
+												<li><a href="right-sidebar.html">lESSON-1 โครงสร้างของภาษา Python</a></li>
+												<li><a href="right-sidebar1.html">lESSON-2 ตัวแปรและประเภทข้อมูล</a></li>
+												<li><a href="right-sidebar2.html">lESSON-3 การรับค่าและการแสดงผล</a></li>
+												<li><a href="right-sidebar3.html">lESSON-4 ตัวดำเนินการ ในภาษา Python</a></li>
+												<li><a href="right-sidebar4.html">lESSON-5 FlowChart</a></li>
+												<li><a href="right-sidebar5.html">lESSON-6 คำสั่งเลือกเงื่อนไข</a></li>
+												<li><a href="right-sidebar6.html">lESSON-7 คำสั่งวนซ้ำ</a></li>
+												<li><a href="right-sidebar7.html">lESSON-8 ฟังก์ชัน(Function)</a></li>
+												<li><a href="right-sidebar8.html">lESSON-9 String ในภาษา Python</a></li>
+												<li><a href="right-sidebar9.html">lESSON-10 String methods</a></li>
+												<li><a href="right-sidebar10.html">lESSON-11 Lists ในภาษา Python</a></li>
+											</ul>
+										</section>
+									</div>
+
+							</div>
+						</div>
+					</div>
+				</section>
+
+			<!-- Footer -->
+				<section id="footer" class="wrapper">
+					<div class="title">The Rest Of It</div>
+					<div class="container">
+						<header class="style1">
+							<h2>Ipsum sapien elementum portitor?</h2>
+						</header>
+						<div class="row">
+							<div class="col-6 col-12-medium">
+
+								<!-- Contact Form -->
+									<section>
+										<form method="post" action="#">
+											<div class="row gtr-50">
+												<div class="col-6 col-12-small">
+													<input type="text" name="name" id="contact-name" placeholder="Name" />
+												</div>
+												<div class="col-6 col-12-small">
+													<input type="text" name="email" id="contact-email" placeholder="Email" />
+												</div>
+												<div class="col-12">
+													<textarea name="message" id="contact-message" placeholder="Message" rows="4"></textarea>
+												</div>
+												<div class="col-12">
+													<ul class="actions">
+														<li><input type="submit" class="style1" value="Send" /></li>
+														<li><input type="reset" class="style2" value="Reset" /></li>
+													</ul>
+												</div>
+											</div>
+										</form>
+									</section>
+
+							</div>
+							<div class="col-6 col-12-medium">
+
+								<!-- Contact -->
+									<section class="feature-list small">
+										<div class="row">
+											<div class="col-6 col-12-small">
+												<section>
+													<h3 class="icon solid fa-home">Mailing Address</h3>
+													<p>
+														205/5<br />
+														Don Chedi, Don Chedi<br />
+														Suphan Buri, 72170
+													</p>
+												</section>
+											</div>
+											<div class="col-6 col-12-small">
+												<section>
+													<h3 class="icon solid fa-comment">Social</h3>
+													<p>
+														<a href="https://web.facebook.com/Tinnapat45/">Facebook</a><br />
+														<a href="https://www.instagram.com/tinapat45/">Instagram</a><br />
+														<a href="https://linevoom.line.me/user/_dTpB75yiOhWRzR9dC6UQfdkKZ9fcxgvADSApnbU?utm_medium=windows">Line</a>
+													</p>
+												</section>
+											</div>
+											<div class="col-6 col-12-small">
+												<section>
+													<h3 class="icon solid fa-envelope">Email</h3>
+													<p>
+														<a href="#">tinnapat532545@gmail.com</a>
+													</p>
+												</section>
+											</div>
+											<div class="col-6 col-12-small">
+												<section>
+													<h3 class="icon solid fa-phone">Phone</h3>
+													<p>
+														092-916-3250
+													</p>
+												</section>
+											</div>
+										</div>
+									</section>
+
+							</div>
+						</div>
+						<div id="copyright">
+							<ul>
+								<li>&copy; Untitled.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</div>
+				</section>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
