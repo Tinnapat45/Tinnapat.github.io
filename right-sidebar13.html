@@ -62,37 +62,85 @@
 									<div id="content">
 										<article class="box post">
 											<header class="style1">
-												<h2>List methods</h2>
+												<h2>Dictionary ในภาษา Python</h2>
 											</header>
-												<img src="images/r5.png" alt="" />
+												<img src="images/r14.png" alt="" />
 
-											<p></p>
+											<p>ในบทนี้ คุณจะได้เรียนรู้เกี่ยวกับโครงสร้างข้อมูล Dictionary ในภาษา Python เราจะแนะนำให้คุณรู้จักกับ Dictionary 
+												คืออะไร และการประกาศและใช้งานสำหรับเก็บข้อมูลในการเขียนโปรแกรม นอกจากนี้ เรายังจะพูดถึงการใช้งานเมธอดและ 
+												built-in functions ของ Dictionary และตัวอย่างการใช้งานกับการเขียนโปรแกรมในรูปแบบต่างๆ ในภาษา Python</p>
 												
-											<p>Phasellus nisl nisl, varius id porttitor sed, pellentesque ac orci. Pellentesque
-											habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi
-											bibendum justo sed mauris vehicula malesuada aliquam elit imperdiet. Aliquam eu nibh
-											lorem, eget gravida mi. Duis odio diam, luctus et vulputate vitae, vehicula ac dolor.
-											Pellentesque at urna eget tellus lobortis ultrices sed non erat. Donec eget erat non
-											magna volutpat malesuada quis eget eros. Nullam sodales cursus sapien, id consequat
-											leo suscipit ut. Praesent id turpis vitae turpis pretium ultricies. Vestibulum sit
-											amet risus elit.</p>
-											<p>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra
-											ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel. Praesent nec orci
-											eget quam rutrum bibendum. Proin pellentesque diam non ligula commodo tempor. Vivamus
-											eget urna nibh. Curabitur non fringilla nisl. Donec accumsan interdum nisi, quis
-											tincidunt felis sagittis eget. Donec elementum ligula dignissim sem pulvinar non semper
-											odio eleifend. Duis commodo fringilla commodo. Aliquam erat volutpat. Vestibulum
-											facilisis leo magna. Cras sit amet urna eros, id egestas urna. Quisque aliquam
-											tempus euismod. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
-											posuere cubilia.</p>
-											<p>Phasellus nisl nisl, varius id porttitor sed, pellentesque ac orci. Pellentesque
-											habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi
-											bibendum justo sed mauris vehicula malesuada aliquam elit imperdiet. Aliquam eu nibh
-											lorem, eget gravida mi. Duis odio diam, luctus et vulputate vitae, vehicula ac dolor.
-											Pellentesque at urna eget tellus lobortis ultrices sed non erat. Donec eget erat non
-											magna volutpat malesuada quis eget eros. Nullam sodales cursus sapien, id consequat
-											leo suscipit ut. Praesent id turpis vitae turpis pretium ultricies. Vestibulum sit
-											amet risus elit.</p>
+											<p>การประกาศ Dictionary ในภาษา Python<br>
+												ในการใช้งาน Dictionary เรามักจะใช้เก็บข้อมูลที่สามารถใช้บางอย่างที่สามารถจำแนกข้อมูลออกจากกันได้ โดยกำหนดให้สิ่งนั้นเป็น Key 
+												ในการประกาศ Dictionary สมาชิกของมันจะอยู่ภายในวงเล็บปีกกา {} มาดูตัวอย่างในการประกาศ Dictionary ในภาษา Python</p>
+
+												<img src="images/r14b1.png" alt="" />
+											<p>ในตัวอย่าง เราได้ประกาศตัวแปร Dictionary ที่มีชื่อว่า scores สำหรับเก็บคะแนนของแต่ละคนโดยใช้ชื่อเป็น Key และค่าของมันก็คือคะแนน 
+												สมาชิกของ Dictionary แต่ละตัวจะถูกกำหนดในรูปแบบ key: value และคั่นสมาชิกแต่ละตัวด้วยเครื่องหมายคอมมา เราได้กำหนดค่าเริ่มต้นสามค่าให้กับ Dictionary 
+												และสามารถกำหนดค่าให้กับ Dictionary ในรูปแบบ scores['bobby'] ได้หลังจากที่ตัวแปรถูกสร้างแล้ว สังเกตว่าเราสามารถใช้ Key เป็น String หรือประเภทข้อมูลอื่นๆ 
+												ได้ ต่อมาตัวแปร numbers เป็น Dictionary ที่มี Key เป็นตัวเลข</p>
+
+												<img src="images/r14b2.png" alt="" />
+											<p>นี่เป็นผลลัพธ์ของโปรแกรมในการแสดงผลข้อมูลภายในตัวแปร Dictionary ทั้งสองที่เราได้สร้างขึ้น</p>
+
+											<p>การเข้าถึงข้อมูลภายใน Dictionary<br>
+												หลังจากที่เราได้ประกาศ Dictionary ไปแล้ว ต่อไปจะเป็นการเข้าถึงข้อมูลเพื่ออ่านและอัพเดทข้อมูลโดยผ่านทาง Key ของมัน มาดูตัวอย่างการเข้าถึงข้อมูลใน Dictionary</p>
+
+												<img src="images/r14b3.png" alt="" />
+											<p>ในตัวอย่าง เรามีตัวแปร scores สำหรับเก็บคะแนนของผู้เล่นโดยชื่อเป็น Key ของ Dictionary ในการเข้าถึงข้อมูลนั้นจะใช้ Key ของมัน 
+												ในส่วนแรกเป็นการเข้าถึงข้อมูลภายใน Dictionary เพื่อแสดงผลคะแนนของแต่ละ Key ออกมาทางหน้าจอ ต่อมาเป็นการอัพเดทข้อมูลใน Dictionary 
+												โดยเราได้เพิ่มค่าให้กับ Key 'james' ขึ้นไปอีก 1000 และกำหนดค่าให้กับ Key 'thomas' เป็น 100 และแสดงผลอีกครั้ง</p>
+
+												<img src="images/r14b4.png" alt="" />
+											<p>นี่เป็นผลลัพธ์การทำงานของโปรแกรม ในการเข้าถึงข้อมูลภายใน Dictionary เพื่ออ่านค่าและอัพเดทข้อมูล</p>
+
+											<p>ในการเข้าถึงข้อมูลภายใน Dictionary นั้น คุณต้องตรวจสอบให้แน่ใจว่า Key นั้นมีอยู่จริง ไม่เช่นนั้นโปรแกรมจะเกิดข้อผิดพลาดขึ้น ยกตัวอย่างเช่น</p>
+
+												<img src="images/r14b5.png" alt="" />
+											<p>ในตัวอย่างข้างบน โปรแกรมจะเกิดความผิดพลาดขึ้นเพราะเราได้เข้าถึง Key 'smith' ซึ่งไม่มีอยู่ใน scores อย่าไรก็ตาม เราสามารถตรวจว่า Key มีอยู่หรือไม่ได้โดยการใช้คำสั่ง in เพื่อตรวจสอบจาก Key ในเมธอด keys() ของ Dictionary</p>	
+
+											<p>การอ่านค่าใน Dictionary ด้วยคำสั่ง For loop<br>
+												คำสั่ง For loop นั้นเป็นคำสั่งที่ยืดหยุ่นและสามารถใช้งานได้อย่างหลากหลาย ในการอ่านค่าใน Dictionary นั้นเราสามารถใช้ For loop เพื่อวนอ่านค่าทั้ง Key และ Values ใน Dictionary ได้ มาดูตัวอย่างของโปรแกรม</p>
+
+												<img src="images/r14b6.png" alt="" />
+											<p>ในตัวอย่าง เป็นการใช้งานคำสั่ง For loop วนอ่านค่าใน Dictionary ซึ่งมี 3 loop ด้วยกัน ในลูปแรกเป็นการอ่านค่าแบบ Key และ Value ในแต่ละรอบของการทำงานเราเอาข้อมูลใน Dictionary ด้วยเมธอด items() ซึ่งจะส่งค่ากลับเป็น Key และ Value 
+												กับมาและโหลดใส่ในตัวแปร k และ v ตามลำดับ</p>
+
+											<p>ในลูปที่สอง เป็นการวนอ่าน Key ทั้งหมดภายใน Dictionary โดยเมธอด keys() จะส่งค่ากลับเป็น List ของ Key ทั้งหมดและโหลดใส่ในตัวแปร k แต่ละรอบของลูป และในลูปสุดท้ายนั้นเป็นการอ่าน Value ทั้งหมด และเมธอด values() เพื่อรับค่าของ Value 
+												ทั้งหมดมาและใส่ในตัวแปร v ในแต่ละรอบของลูป</p>
+
+												<img src="images/r14b7.png" alt="" />
+											<p>นี่เป็นผลลัพธ์การทำงานของโปรแกรม ในการใช้คำสั่ง For loop เพื่ออ่านข้อมูลใน Dictionary ในภาษา Python</p>
+
+											<p>Python Dictionary methods<br>
+												เช่นเดียวกับข้อมูลประเภทอื่นๆ Dictionary มีเมธอดที่ให้คุณสามารถทำงานกับมันได้ง่ายขึ้น โดยส่วนมากแล้วมักจะเป็นเมธอดในการอัพเดทและรับค่าข้อมูลภายใน Dictionary ต่อไปมาดูตัวอย่างการใช้งานเมธอดของ Dictionary ในภาษา Python</p>
+
+												<img src="images/r14b8.png" alt="" />
+											<p>ในตัวอย่าง เป็นโปรแกรมในการใช้งานเมธอดของ Dictionary ตัวแปรของเรา countries มาจากตัวอย่างก่อนหน้าที่มี Key เป็นชื่อย่อของประเทศและ Value เป็นชื่อเต็มของประเทศ เมธอด keys() ส่งค่ากลับเป็น List ของ Key ทั้งหมดภายใน Dictionary และเมธอด values() 
+												นั้นจะส่งเป็น List ของ Value</p>
+
+											<p>หลังจากนั้นเป็นการเข้าถึงข้อมูลด้วยเมธอด get() โดยมี Key เป็นอาร์กิวเมนต์ซึ่งผลลัพธ์การทำงานของมันจะเหมือนกับการเข้าถึงข้อมูลโดยตรง เช่น countries['de'] และเมธอด setdefault() ใช้รับค่าจากคีย์ที่กำหนด ถ้าไม่มีจะเป็นการเพิ่มค่าดังกล่าวเข้าไปใน Dictionary 
+												และต่อมาเมธอด popitem() จะนำสมาชิกตัวสุดท้ายออกจาก Dictionary และส่งค่าดังกล่าวกลับมาเป็น Tuple ออบเจ็ค ส่วนเมธอด items() นั้นจะส่งค่ากลับมาเป็น List ของ Tuple ของออบเจ็คของ Key และ Value ทั้งหมด</p>
+
+												<img src="images/r14b9.png" alt="" />
+											<p>นี่เป็นผลลัพธ์การทำงานของโปรแกรม ในการใช้เมธอดของ Dictionary ในภาษา Python และจากในตัวอย่างนั้นเป็นเพียงส่วนหนึ่งของเมธอดที่มีเท่านั้น สำหรับเมธอดทั้งหมดใน Dictionary นั้นแสดงดังตารางข้างล่างนี้</p>
+
+												<img src="images/r14b10.png" alt="" />
+											<p>Python Dictionary functions<br>
+												ฟังก์ชันที่เป็นพื้นฐานและสามารถใช้ได้กับโครงสร้างข้อมูลทุกประเภทคือฟังก์ชัน len() เป็นฟังก์ชันที่ใช้สำหรับนับจำนวนสมาชิกของเจ็ค และ Dictionary ยังมีฟังก์ชัน iter() ที่ทำงานเหมือนกับเมธอด items() นี่เป็นตารางของฟังก์ชันที่สามารถใช้ได้กับ Dictionary</p>
+
+												<img src="images/r14b11.png" alt="" />
+											<p>คุณสามารถใช้คำสั่ง del เพื่อลบข้อมูลภายใน Dictionary ได้ เช่น คำสั่ง del countries['de'] เพื่อลบสมาชิกที่มี Key ที่กำหนดออกไป และคำสั่ง del countries นั้นเป็นการลบทั้งตัวแปร</p>
+
+											<p>ในบทนี้ คุณได้เรียนรู้เกี่ยวกับ Dictionary ในภาษา Python คุณได้ทราบวิธีการสร้างและใช้งาน Dictionary และสถานการณ์ที่เหมาะสมที่จะใช้ข้อมูลประเภทนี้ เราได้แสดงให้เห็นถึงการเข้าถึงข้อมูลภายใน Dictionary แบบพื้นฐานและด้วยการใช้คำสั่งวนซ้ำ For loop 
+												รวมถึงการใช้งานเมธอดและฟังก์ชันสำหรับจัดการ Dictionary</p>
+
+												
+
+
+
+
+
 										</article>
 										<div class="row gtr-150">
 											<div class="col-6 col-12-small">
