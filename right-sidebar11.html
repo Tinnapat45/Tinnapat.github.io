@@ -62,37 +62,67 @@
 									<div id="content">
 										<article class="box post">
 											<header class="style1">
-												<h2>คำสั่งเลือกเงื่อนไข</h2>
+												<h2>List methods</h2>
 											</header>
-												<img src="images/r5.png" alt="" />
+												<img src="images/r12.png" alt="" />
 
-											<p></p>
+											<p>ในบทนี้ เราจะพูดถึงการใช้งาน List เมธอด ในภาษา Python เนื่องจาก List เป็นออบเจ็ค ดังนั้น Python จึงได้ให้เมธอดต่างๆ สำหรับทำงานพื้นฐานกับ List 
+												ที่ช่วยอำนวยความสะดวกในการทำงานเป็นอย่างมาก นอกจากนี้ เรายังจะพูดถึงการใช้งาน built-in function กับ List ถึงแม้ในภาษา Python 
+												นั้นมีเมธอดและฟังก์ชันเป็นจำนวนมาก แต่เราจะมาดูตัวอย่างการใช้งานเฉพาะที่สำคัญ</p>
 												
-											<p>Phasellus nisl nisl, varius id porttitor sed, pellentesque ac orci. Pellentesque
-											habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi
-											bibendum justo sed mauris vehicula malesuada aliquam elit imperdiet. Aliquam eu nibh
-											lorem, eget gravida mi. Duis odio diam, luctus et vulputate vitae, vehicula ac dolor.
-											Pellentesque at urna eget tellus lobortis ultrices sed non erat. Donec eget erat non
-											magna volutpat malesuada quis eget eros. Nullam sodales cursus sapien, id consequat
-											leo suscipit ut. Praesent id turpis vitae turpis pretium ultricies. Vestibulum sit
-											amet risus elit.</p>
-											<p>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra
-											ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel. Praesent nec orci
-											eget quam rutrum bibendum. Proin pellentesque diam non ligula commodo tempor. Vivamus
-											eget urna nibh. Curabitur non fringilla nisl. Donec accumsan interdum nisi, quis
-											tincidunt felis sagittis eget. Donec elementum ligula dignissim sem pulvinar non semper
-											odio eleifend. Duis commodo fringilla commodo. Aliquam erat volutpat. Vestibulum
-											facilisis leo magna. Cras sit amet urna eros, id egestas urna. Quisque aliquam
-											tempus euismod. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
-											posuere cubilia.</p>
-											<p>Phasellus nisl nisl, varius id porttitor sed, pellentesque ac orci. Pellentesque
-											habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi
-											bibendum justo sed mauris vehicula malesuada aliquam elit imperdiet. Aliquam eu nibh
-											lorem, eget gravida mi. Duis odio diam, luctus et vulputate vitae, vehicula ac dolor.
-											Pellentesque at urna eget tellus lobortis ultrices sed non erat. Donec eget erat non
-											magna volutpat malesuada quis eget eros. Nullam sodales cursus sapien, id consequat
-											leo suscipit ut. Praesent id turpis vitae turpis pretium ultricies. Vestibulum sit
-											amet risus elit.</p>
+											<p>การใช้งานเมธอดของ List<br>
+												ตัวอย่างแรกของการใช้เมธอดของ List นั้นจะเป็นการใช้งานเมธอดเพื่อทำงานพื้นฐานกับ List คือการเพิ่มและลบข้อมูลออกจาก List โปรแกรมของเราเป็นการใช้ List 
+												เพื่อเก็บรายชื่อ หลังจากนั้นเราใช้เมธอดต่างๆ กับเพื่อจัดการกับข้อมูลภาย List นี่เป็นโค้ดการทำงานของโปรแกรม</p>
+
+												<img src="images/r12b1.png" alt="" />
+											<p>ในตัวอย่าง เราได้สร้างตัวแปร List ขึ้นมาและกำหนดสมาชิกให้กับตัวแปร โดยมีสมาชิกที่เป็น String จำนวน 4 ตัว หลังจากนั้นเราใช้เมธอด append() 
+												ในการเพิ่มอีกสองชื่อเข้ามา โดยเมธอดนี้จะทำการเพิ่มข้อมูลใหม่เข้าไปยังท้ายของ List ต่อมาเราใช้เมธอด insert() 
+												เพื่อเพิ่มสมาชิกไปยังตำแหน่งที่ต้องการ เราได้เพิ่ม 'Mike' ไปยังตำแหน่งที่ 3 ของ List ทำให้ในตอนนี้ List ของเรามีสมาชิกทั้งหมด 7 ตัว</p>
+
+												<img src="images/r12b2.png" alt="" />
+											<p>หลังจากนั้นเป็นการใช้งานเมธอด remove() เพื่อนำออกข้อมูลใน List เราได้ทำการลบสองรายชื่อ คือ 'David' และ 'Johnny' ออกไปจาก List 
+												โดยเมธอดจะทำการลบข้อมูลแรกที่เจอใน List ออกไปในกรณีที่ข้อมูลนั้นมีเหมือนกันมากกว่าหนึ่งใน List แต่ในการใช้งานเมธอดคุณต้องตรวจสอบให้แน่ใจว่าข้อมูลนั้นมีอยู่จริง 
+												ไม่เช่นนั้นจะทำให้เกิดข้อผิดพลาดขึ้น</p>
+
+												<img src="images/r12b3.png" alt="" />
+											<p>ต่อมาเป็นการนำข้อมูลออกจาก List ด้วยการใช้เมธอด pop() การทำงานของเมธอดนั้นจะนำข้อมูลที่อยู่ท้ายสุดของ List และส่งค่านั้นกลับมา และเนื่องจาก List มีเมธอด append() และ pop() 
+												ดังนั้น เราจึงสามารใช้ List เหมือนกับการทำงานของ Stack ได้ และเมธอด clear() นั้นสำหรับลบข้อมูลออกจาก List ทั้งหมด</p>
+
+												<img src="images/r12b4.png" alt="" />
+											<p>นี่เป็นผลการทำงานของโปรแกรมในการใช้งานเมธอดเพื่อเพิ่มและลบข้อมูลกับ List ในรูปแบบต่างๆ</p>
+
+											<p>มาดูตัวอย่างในการใช้งาน List กับเมธอดเพิ่มเติมในภาษา Python ที่เป็นโปรแกรมในการเก็บชื่อของผลไม้ เราได้ทำการประกาศ List fruits 
+												และกำหนดสมาชิก 6 ตัวให้กับ List แต่มี 'apple' ที่มี 2 ตัวใน List นี่เป็นโค้ดการทำงานของโปรแกรม</p>
+
+												<img src="images/r12b5.png" alt="" />
+											<p>ในตัวอย่าง เรามี List ในการเก็บรายชื่อของผลไม้ เมธอด count() ใช้สำหรับนับจำนวนออบเจ็คที่ตรงกันกับที่ระบุภายใน List เราได้ทำการนับ 'apple' และ 'banana' ใน List 
+												และแสดงจำนวนที่ได้ออกทางหน้าจอ เมธอด index() นั้นใช้สำหรับหาตำแหน่ง Index ของออบเจ็คตัวแรกที่พบใน List เราได้ใช้เมธอดเพื่อหา Index ของ 'grape' และแสดงผลตำแหน่งที่ได้
+												เมธอด sort() ใช้สำหรับเรียงข้อมูลภายใน List ตามตัวอักษรจากก่อนไปทีหลัง ในกรณีที่ข้อมูลใน List เป็นตัวเลขจะเป็นการเรียงจากน้อยไปหามากแทน 
+												คุณสามารถใช้ Keyword argument ที่ชื่อว่า reverse โดยกำหนดให้เป็น True หากต้องการเรียงจากมากไปหาน้อย ซึ่งโดยปกติแล้วค่านี้จะมีค่าเป็น False 
+												และเมธอด reverse() ใช้สำหรับย้อนกลับข้อมูลภายใน List จากตำแหน่งแรกไปตำแหน่งสุดท้ายและในทางกลับกัน</p>
+
+												<img src="images/r12b6.png" alt="" />
+											<p>นี่เป็นผลลัพธ์การทำงานของโปรแกรม</p>
+
+											<p>ในสองตัวอย่างก่อนหน้า เป็นการใช้งานเมธอดต่างๆ ของ List อย่างไรก็ตามยังมีเมธอดอื่นๆ อีกที่เราไม่ได้กล่าวถึง นี่เป็นรายการเมธอดทั้งหมดของ List ในภาษา Python</p>
+												<img src="images/r12b7.png" alt="" />
+
+											<p>การใช้งานฟังก์ชันกับ List<br>
+												ในภาษา Python นั้นมี built-in function ที่สามารถใช้งานกับโครงสร้างข้อมูลทั่วไปได้ เช่น List Tupple หรือ Dictionary ฟังก์ชันเหล่านี้อำนวยความสะดวกเป็นอย่างมาก เช่น การนับจำนวนสมาชิก 
+												การหาค่าน้อยสุดหรือค่ามากสุด เป็นต้น ต่อไปมาดูตัวอย่างการใช้งานฟังก์ชันที่สามารถใช้ได้กับ List</p>
+
+												<img src="images/r12b8.png" alt="" />
+											<p>ในตัวอย่าง เป็นการใช้งานฟังก์ชันกับ List ของตัวเลข โดยฟังก์ชัน len() ที่เรารู้จักกันดีนั้นใช้สำหรับนับจำนวนของออบเจ็คภายใน List อย่างไรก็ตามฟังก์ชันนี้สามารถใช้งานได้กับข้อมูลประเภทอื่นๆ เหมือนกัน เช่น ใช้กับ Tuple Dictionary 
+												หรือการหาความยาวของ String ฟังก์ชัน min() สำหรับหาค่าที่น้อยที่สุดใน List และฟังก์ชัน max() นั้นสำหรับหาค่าที่มากที่สุด</p>
+
+												<img src="images/r12b9.png" alt="" />
+											<p>ต่อไปเป็นการใช้งานฟังก์ชัน list() ในการแปลงข้อมูลประเภทต่างๆ ไปเป็น List ในคำสั่งแรกเป็นการแปลงข้อมูลจากออบเจ็คลำดับของตัวเลขที่สร้างจากฟังก์ชัน range() 
+												เป็น List และในคำสั่งที่สองเป็นการแปลง Tuple ให้เป็น List</p>
+
+												<img src="images/r12b10.png" alt="" />
+											<p>นี่เป็นผลลัพธ์การทำงานของโปรแกรม ในการใช้ฟังก์ชันกับ List</p>
+
+											<p>ในบทนี้ เราได้ครอบคลุมการใช้งานเมธอดของ List ในภาษา Python คุณได้เห็นตัวอย่างในการใช้งานเมธอดกับ List ในการเขียนโปรแกรมแบบต่างๆ นอกจากนี้ ยังทราบถึงการใช้งาน built-in function ที่สามารถใช้งานกับ List ได้</p>
 										</article>
 										<div class="row gtr-150">
 											<div class="col-6 col-12-small">
